@@ -1,7 +1,7 @@
 require('sinatra')
 require('sinatra/reloader')
-require('./lib/dictionary')
+require('./lib/difinition')
 
-get('/') do
+post('/') do
   erb(:index)
 end
