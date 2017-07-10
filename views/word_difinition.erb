@@ -1,0 +1,27 @@
+<h3>Add a new definition to your word:</h3>
+ <form action='/new_difinition' method='post'>
+
+  <input id='id' name='id' type='hidden' value='<%= @word.id() %>'>
+
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <input id="description" name="description" type="text" class="form-control">
+  </div>
+
+   <div class="form-group">
+    <label for="type">type:</label>
+    <input id="type" name="type" type="text" class="form-control">
+  </div>
+
+   <div class="form-group">
+    <label for="word">Language:</label>
+    <input id="word" name="word" type="text" class="form-control">
+  </div>
+
+  <button type="submit" class="btn-success">Add definition</button>
+</form>
+
+<ul class="list-inline">
+  <li><a href="/word/<%= @word.id %>">Back to word</a></li>
+  <li><a href="/">Home</a></li>
+</ul>

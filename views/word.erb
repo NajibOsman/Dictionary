@@ -1,0 +1,16 @@
+<h2><u><%= @word.show() %></u></h2>
+
+<% @difinitions.each() do |difinition| %>
+  <dl class="dl-horizontal">
+    <dt><%= difinition.type() %></dt>
+    <dd><%= difinition.description %></dd>
+    <dd><small>(<%= difinition.word() %>)</small></dd>
+  </dl>
+
+<% end %>
+
+
+<ul class="list-inline">
+  <li><a href="/word/<%= @word.id %>/new_difinition/new">Add a definition</a></li>
+  <li><a href="/">Home</a></li>
+</ul>

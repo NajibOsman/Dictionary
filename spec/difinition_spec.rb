@@ -2,9 +2,9 @@ require('rspec')
   require('difinition')
 
   describe('Difinition') do
-    # before() do
-    #   Difinition.clear()
-    # end
+    before() do
+      Difinition.clear()
+    end
 
     describe("#word") do
           it("returns the word") do

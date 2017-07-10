@@ -1,19 +1,23 @@
-<div class="text-center">
-  <h1>Welcome to My dictionary</h1>
-</div>
+<div class"text-center"> <h1>Welcome to My Dictionary</h1> </div>
+<hr>
+  <!-- <a href="/word_list">See word List</a>
+  <a href="/word_list/new">Add New word</a> -->
 
-<p>Create a new word:</p>
+  <h2>Here are your words:</h2>
 
-<form action="/index" method="post">
-  <label for="description">Word</label>
-  <input id="description" name="description" type="text">
 
-  <label for="description">
-    Type of word</label>
-  <input id="description" name="description" type="text">
+  <% @words.each() do |word| %>
+    <ul>
+      <li><h3><a href="/word/<%= word.id() %>"><%= word.show() %></a></h3></li>
+    </ul>
+  <% end %>
+  <br>
 
-  <label for="description">Word Description</label>
-  <input id="description" name="description" type="text">
+  <h4>Add a new word to your dictionary:</h4>
+   <form action='/new_word' method='post'>
+    <div class="form-group">
+      <input id="new_word" name="new_word" type="text" class="form-control input-sm">
+    </div>
 
-  <button type="submit">Add word</button>
-</form>
+    <button type="submit" class="btn-default">Add</button>
+  </form>

@@ -1,11 +1,11 @@
+<a href="/">Home</a>
+<hr>
+
 <h2>Words with definition</h2>
 
 
-<% @all_words.each() do |word| %>
+<% @words.each() do |word| %>
 <ul>
   <li><a href="/word/<%= word.id() %>"><%= word.show() %></a></li>
 </ul>
 <% end %>
-
-
-<a href="/">Home</a>
