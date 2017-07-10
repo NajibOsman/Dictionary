@@ -2,6 +2,8 @@
 ### Author
 Abdulmajid Osman
 
+###### [VIEW DEMO](https://my-dictionary-ruby.herokuapp.com/)
+
 ## Description
 A website that a user can find words and see there definitions and he/she can add a word or can define words.
 
