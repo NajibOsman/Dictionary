@@ -1,9 +1,6 @@
 ## My Dictionary
 ### Author
 Abdulmajid Osman
-[Email](machidydemajka38@gmail.com)
-
-###### [VIEW DEMO](https://young-wave-61421.herokuapp.com/)
 
 ## Description
 A website that a user can find words and see there definitions and he/she can add a word or can define words.
