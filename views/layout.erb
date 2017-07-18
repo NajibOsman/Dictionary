@@ -1,12 +1,37 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <title>My Dictionary</title>
-      <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-    </head>
-    <body>
-      <div class="container">
-        <%= yield %>
+<html>
+  <head>
+    <title>My Dictionary</title>
+    <meta charset="utf-8">
+    
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZQ9Yzs0uV_a5Hzle_qg49_zq8MvHyKeD2mxDp2hfUyYJV_dQ_pg">
+
+  </head>
+  <body>
+    <nav class="#c51162 pink accent-4">
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo center">Dictionary</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="/">Home</a></li>
+        </ul>
       </div>
-    </body>
-  </html>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="/js/init.js"></script>
+  </body>
+</html>
